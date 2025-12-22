@@ -1,5 +1,5 @@
 # Portfolio Website #
 ## Technologies Used ##
-### React JS ###
-### React Three Fiber ###
+ React JS
+ React Three Fiber
 
