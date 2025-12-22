@@ -127,15 +127,15 @@ nav {
     transform: translate(0%, 10px);
   }
 
-  .toggle.active .line-1 {
+  .toggle.open .line-1 {
    transform: rotate(-45deg);
   }
 
-  .toggle.active .line-2 {
+  .toggle.open .line-2 {
     width: 0;
   }
 
-  .toggle.active .line-3 {
+  .toggle.open .line-3 {
     transform: rotate(45deg);
   }
 
@@ -157,7 +157,7 @@ nav {
     visibility: hidden;
   }
 
-  .nav-items.active {
+  .nav-items.open {
     right: 0;
     opacity: 1;
     visibility: visible;

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber';
 import ShaderComponent from './ShaderComponent';
 import About from './About'

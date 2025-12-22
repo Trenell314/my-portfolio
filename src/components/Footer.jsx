@@ -1,9 +1,7 @@
-import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
+  <footer>
     <div className="footer" id="contact-section">
       <div className="footer-wrap">
         <img src="/images/Trenell_Logo_Gafta.svg" alt="an svg" className="footer-logo"/>
@@ -21,7 +19,6 @@ const Footer = () => {
       </div>
     </div>
   </footer>
-    </div>
   )
 }
 
