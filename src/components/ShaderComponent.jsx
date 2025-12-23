@@ -1,5 +1,5 @@
-import { useRef, useEffect } from 'react';
-import { useFrame, useThree } from '@react-three/fiber';
+import {useRef, useEffect} from 'react';
+import {useFrame, useThree} from '@react-three/fiber';
 import * as THREE from 'three';
 
 const ShaderComponent = () => {
@@ -87,7 +87,7 @@ const ShaderComponent = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      const container = document.getElementById('shader-container');
+      const container = document.getElementById('home-section');
       if (!container) return;
       
       const rect = container.getBoundingClientRect();

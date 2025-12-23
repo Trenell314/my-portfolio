@@ -1,7 +1,7 @@
 import Nav from './components/Nav.jsx';
 import Home from './components/Home.jsx';
 import Footer from './components/Footer.jsx';
-import './styles/styles.css'
+import './styles/styles.css';
 
 function App() {
   return ( 
@@ -9,8 +9,9 @@ function App() {
         <Nav />
         <Home />
         <Footer />
-      </div>
+      </div> 
   );
+ 
 }
 
 export default App;

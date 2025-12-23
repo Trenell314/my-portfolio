@@ -179,15 +179,14 @@ nav {
   }
 }
 
-#shader-container {
-  position: absolute !important; 
+#home-section {
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100vh !important;
   overflow: hidden;
-  border-radius: 0px 0px 20px 20px;
-  z-index: 1;
+  border-radius: 0px 0px 20px 0px;
+  z-index: 0;
 }
 
 .hero {
