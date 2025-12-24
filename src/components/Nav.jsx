@@ -28,7 +28,7 @@ const Nav = () => {
         <span className="line-3"></span>
       </div>
       <ul className={["nav-items", isOpen ? "open" : ""].join(" ")}>
-        <li><a href="#home-section" onClick={toggleMenu}>Home</a></li>
+        <li><a href="#hero-section" onClick={toggleMenu}>Home</a></li>
         <li><a href="#about-section" onClick={toggleMenu}>About</a></li>
         <li><a href="#contact-section" onClick={toggleMenu}>Contact</a></li>
       </ul>

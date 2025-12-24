@@ -18,7 +18,6 @@ const ShaderComponent = () => {
         varying vec2 vUv;
         void main() {
           vUv = uv;
-          // Scale to fill screen
           vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
           gl_Position = projectionMatrix * modelViewPosition;
         }
@@ -31,7 +30,6 @@ const ShaderComponent = () => {
         uniform vec2 uResolution;
 
         void main() {
-          // Adjust UV to fill screen (fix aspect ratio)
           vec2 uv = vUv;
           float aspect = uResolution.x / uResolution.y;
           
@@ -46,7 +44,7 @@ const ShaderComponent = () => {
           
           if (uMouse.x > 0.0 && uMouse.y > 0.0) {
             float dist = distance(uv, uMouse);
-            mouseEffect = exp(-dist * .5);
+            mouseEffect = exp(-dist * 0.25);
             
             mouseFlow = (uv - uMouse) * mouseEffect;
           }
@@ -65,12 +63,13 @@ const ShaderComponent = () => {
           gradientPos = fract(gradientPos);
           
           vec3 color;
-          if (gradientPos < 0.33) {
-            color = mix(c1, c2, gradientPos * 3.0);
-          } else if (gradientPos < 0.66) {
-            color = mix(c2, c3, (gradientPos - 0.33) * 3.0);
+          //solid color bands:
+          if (gradientPos < 0.3333) {
+            color = c1;  // Solid cream color
+          } else if (gradientPos < 0.6667) {
+            color = c2;  // Solid dark brown color
           } else {
-            color = mix(c3, c1, (gradientPos - 0.66) * 3.0);
+            color = c3;  // Solid orange color
           }
           
           gl_FragColor = vec4(color, 1.0);
@@ -87,7 +86,7 @@ const ShaderComponent = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      const container = document.getElementById('home-section');
+      const container = document.getElementById('hero-section');
       if (!container) return;
       
       const rect = container.getBoundingClientRect();
