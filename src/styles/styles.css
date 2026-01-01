@@ -59,7 +59,7 @@ nav {
   text-align: right;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
-  font-size: 24px;
+  font-size: 1.5rem;
   z-index: 1002;
 }
 
@@ -79,7 +79,7 @@ nav {
 }
 
 .nav-items li {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -190,7 +190,7 @@ nav {
     transition: .3s;     
   }
   .nav-items li {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
@@ -233,7 +233,7 @@ nav {
 .hero-info h2 {
   margin-left: 1vw;
   margin-top: -2vh;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400 !important;
 }
 
@@ -244,7 +244,7 @@ nav {
 
   #nav-items li {
     margin-left: 50px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .logo {
@@ -254,7 +254,7 @@ nav {
 
   .hero-info h2 {
     margin-left: 4vw;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -277,7 +277,7 @@ nav {
 }
 
 .about h2 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-style: italic;
   margin-bottom: 20px;
   font-weight: 600;
@@ -294,7 +294,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 40vh;
-  font-size: 14px;
+  font-size: 0.875rem;
   background-color: rgb(232, 145, 83);
   color: rgb(255, 255, 255);
   border-radius: 100px 100px 0px 0px;
