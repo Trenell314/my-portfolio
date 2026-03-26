@@ -30,6 +30,7 @@ const Nav = () => {
       <ul className={["nav-items", isOpen ? "open" : ""].join(" ")}>
         <li><a href="#hero-section" onClick={toggleMenu}>Home</a></li>
         <li><a href="#about-section" onClick={toggleMenu}>About</a></li>
+        <li><a href="#projects-section" onClick={toggleMenu}>Projects</a></li>
         <li><a href="#contact-section" onClick={toggleMenu}>Contact</a></li>
       </ul>
     </nav>

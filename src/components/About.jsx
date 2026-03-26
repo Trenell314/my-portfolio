@@ -39,10 +39,8 @@ const About = () => {
           About Me
         </motion.h2>
         <motion.p variants={childVariants}>
-          Hello! I'm Trenell Holmes, a front-end developer interested in
-          creating visually appealing and user-friendly web applications.
-          I'm a fast learner and eager to continuously improve my skills by
-          learning new technologies!
+          Hello! My name is Trenell. 
+          I enjoy all things graphic design, product design, and front-end web development.
         </motion.p>
       </motion.div>
     </section>

@@ -33,9 +33,9 @@ const ShaderComponent = () => {
           vec2 uv = vUv;
           float aspect = uResolution.x / uResolution.y;
           
-          vec3 c1 = vec3(1.,0.835,0.663); //Cream
-          vec3 c2 = vec3(0.286,0.122,0.); //Dark Brown
-          vec3 c3 = vec3(0.91,0.569,0.329);  //Orange
+          vec3 c1 = vec3(0, 0, 0); // Black
+          vec3 c2 = vec3(0.204,0.18,0.341); // Dark Purple
+          vec3 c3 = vec3(0.514,0.482,0.725);  // Light Purple
           
           float time = uTime * 0.0003;
           
@@ -63,13 +63,12 @@ const ShaderComponent = () => {
           gradientPos = fract(gradientPos);
           
           vec3 color;
-          //solid color bands:
           if (gradientPos < 0.3333) {
-            color = c1;  // Solid cream color
+            color = c1;  // black 
           } else if (gradientPos < 0.6667) {
-            color = c2;  // Solid dark brown color
+            color = c2;  // dark purple 
           } else {
-            color = c3;  // Solid orange color
+            color = c3;  // light purple 
           }
           
           gl_FragColor = vec4(color, 1.0);

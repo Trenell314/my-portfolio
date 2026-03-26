@@ -31,7 +31,7 @@ const Home = () => {
         </Canvas>
         <motion.div className="hero-info" style={{y: textY, x: '-50%'}}>
           <img src="images/Trenell_SS_Logo.svg" alt="Trenell Holmes logo" className="logo"/>
-          <h2>Front-End Developer</h2>
+          <h2>Product Designer • Graphic Designer</h2>
         </motion.div>
       </section>
     </div>
